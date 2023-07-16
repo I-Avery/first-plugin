@@ -9,6 +9,9 @@ std::shared_ptr<CVarManagerWrapper> _globalCvarManager;
 void FirstPlugin::onLoad()
 {
 	_globalCvarManager = cvarManager;
+	
+	LOG("hello there, i am a piece of shit ");
+
 	//cvarManager->log("Plugin loaded!");
 
 	//cvarManager->registerNotifier("my_aweseome_notifier", [&](std::vector<std::string> args) {
@@ -43,6 +46,6 @@ void FirstPlugin::onLoad()
 	//gameWrapper->HookEvent("Function TAGame.Ball_TA.Explode", std::bind(&FirstPlugin::YourPluginMethod, this);
 }
 
-void FirstPlugin::onUnload()
-{
+void FirstPlugin::onUnload(){
+	LOG("i'm just gonna go flush myself down the fuckin toilet where i belong ");
 }
